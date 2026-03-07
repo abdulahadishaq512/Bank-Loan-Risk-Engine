@@ -1,13 +1,18 @@
 # Credit-Risk-Engine
 A machine learning pipeline for credit risk assessment that utilizes SQL for data management, Random Forest for default prediction, and a Streamlit-based web interface for real-time risk evaluation.
 Features
-• SQL Integration: Normalized data management using sqlite3.
 
-• Feature Engineering: Created custom domain-specific metrics like Loan_to_Income_Ratio to improve model predictive power.
+• SQL Integration: 
+Normalized data management using sqlite3.
 
-• Predictive Modeling: Utilized RandomForestClassifier to identify high-risk loan profiles.
+• Feature Engineering: 
+Created custom domain-specific metrics like Loan_to_Income_Ratio to improve model predictive power.
 
-• Interactive Dashboard: Deployed a web-based interface using streamlit for live risk inference.
+• Predictive Modeling: 
+Utilized RandomForestClassifier to identify high-risk loan profiles.
+
+• Interactive Dashboard: 
+Deployed a web-based interface using streamlit for live risk inference.
 
 Tech Stack
 • Language: Python 3.12
@@ -29,10 +34,12 @@ How to Run
 Bash
 git clone https://github.com/yourusername/Credit-Risk-Engine.git
 cd Credit-Risk-Engine
+
 2. Install dependencies:
 
 Bash
 pip install -r requirements.txt
+
 3. Run the application:
 
 Bash
