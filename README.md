@@ -1,7 +1,7 @@
 # Bank Loan Risk Engine
 
 A machine learning pipeline for credit risk assessment that predicts loan default probability using SQL data management, Random Forest classification, and a real-time Streamlit web interface.
-🔗 **[Live Demo]([https://your-streamlit-url.streamlit.app](https://bank-loan-risk-engine.streamlit.app/))** | 📂 **[GitHub](https://github.com/abdulahadishaq512/Bank-Loan-Risk-Engine)**
+🔗 **[Live Demo]([https://bank-loan-risk-engine.streamlit.app](https://bank-loan-risk-engine.streamlit.app/))** | 📂 **[GitHub](https://github.com/abdulahadishaq512/Bank-Loan-Risk-Engine)**
 
 ## Features
 
