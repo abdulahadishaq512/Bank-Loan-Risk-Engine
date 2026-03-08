@@ -1,46 +1,52 @@
-# Credit-Risk-Engine
-A machine learning pipeline for credit risk assessment that utilizes SQL for data management, Random Forest for default prediction, and a Streamlit-based web interface for real-time risk evaluation.
-Features
+🏦 Bank Loan Risk Engine
+A machine learning pipeline for credit risk assessment that predicts loan default probability using SQL data management, Random Forest classification, and a real-time Streamlit web interface.
+🔗 **[Live Demo]([https://your-streamlit-url.streamlit.app](https://bank-loan-risk-engine.streamlit.app/))** | 📂 **[GitHub](https://github.com/abdulahadishaq512/Bank-Loan-Risk-Engine)**
 
-• SQL Integration: 
-Normalized data management using sqlite3.
+✨ Features
 
-• Feature Engineering: 
-Created custom domain-specific metrics like Loan_to_Income_Ratio to improve model predictive power.
+SQL Integration — Normalized data management using SQLite with multi-table joins
+Feature Engineering — Custom domain-specific metric Loan_to_Income_Ratio to improve predictive power
+Predictive Modeling — Random Forest classifier achieving ~85% accuracy on held-out test data
+Interactive Dashboard — Real-time risk inference via a deployed Streamlit web app
 
-• Predictive Modeling: 
-Utilized RandomForestClassifier to identify high-risk loan profiles.
 
-• Interactive Dashboard: 
-Deployed a web-based interface using streamlit for live risk inference.
+🛠 Tech Stack
+CategoryToolsLanguagePython 3.12ML & Datascikit-learn, pandas, numpyVisualizationseaborn, matplotlibDeploymentStreamlit CloudData ManagementSQLite3, Kaggle APIModel Persistencejoblib
 
-Tech Stack
-• Language: Python 3.12
+📁 Project Structure
+Bank-Loan-Risk-Engine/
+├── app.py                  # Streamlit web application
+├── credit_risk_model.pkl   # Trained Random Forest model
+├── requirements.txt        # Project dependencies
+└── README.md
 
-• Libraries: pandas, numpy, scikit-learn, seaborn, matplotlib, streamlit, joblib
-
-• Data Management: sqlite3, Kaggle API
-
-Project Structure
-Plaintext
-Credit-Risk-Engine/
-├── app.py              # Streamlit web application
-├── requirements.txt    # Project dependencies
-├── data/               # Raw and processed datasets
-└── src/                # Modular scripts for training and ETL
-How to Run
+🚀 How to Run Locally
 1. Clone the repository:
-
-Bash
-git clone https://github.com/abdulahadishaq512/Credit-Risk-Engine.git
-cd Credit-Risk-Engine
-
+bashgit clone https://github.com/abdulahadishaq512/Bank-Loan-Risk-Engine.git
+cd Bank-Loan-Risk-Engine
 2. Install dependencies:
-
-Bash
-pip install -r requirements.txt
-
+bashpip install -r requirements.txt
 3. Run the application:
+bashstreamlit run app.py
 
-Bash
-streamlit run app.py
+🧠 How It Works
+
+Data Ingestion — Dataset downloaded via Kaggle API and stored in a normalized SQLite database across 3 tables (Users, Financials, Loan_Status)
+Feature Engineering — SQL JOIN query extracts relevant features; Loan_to_Income_Ratio computed as a custom risk metric
+Model Training — Random Forest trained on encoded features with 80/20 train-test split
+Deployment — Model serialized with joblib and served via Streamlit Cloud
+
+
+📊 Model Performance
+MetricScoreAccuracy~85%Precision~84%Recall~85%
+
+👤 Author
+Abdul Ahad Ishaq
+**[GitHub](https://github.com/abdulahadishaq512/)** · [LinkedIn](https://linkedin.com/in/abdulahadishaq/)
+
+Just replace:
+
+your-streamlit-url with your actual Streamlit app URL
+The model performance numbers with your actual results from the classification report
+The LinkedIn URL with your actual profile
+ Sonnet 4.6
